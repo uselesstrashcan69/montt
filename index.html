@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exam Calendar – 27 Apr → 7 May 2025 (Dark Mode, Sunday-first)</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#111418;--panel:#1a1e24;--grid:#30343c;--header:#232831;
+  --text:#e6eaf0;--subtle:#9da3af;--accent:#00cfff;--accent-fg:#002129;
+}
+*{box-sizing:border-box;margin:0}
+body{
+  background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;
+  display:flex;justify-content:center;padding:40px 0;
+}
+h1{
+  padding:24px 0 20px;text-align:center;font-size:1.6rem;font-weight:600;
+  background:linear-gradient(135deg,#00cfff33,#ff007733);
+  -webkit-background-clip:text;color:transparent;
+}
+.wrap{
+  width:96%;max-width:960px;border-radius:18px;overflow:hidden;
+  background:var(--panel);box-shadow:0 12px 28px rgba(0,0,0,.55);
+}
+table{width:100%;border-collapse:collapse;table-layout:fixed}
+th,td{
+  border:1px solid var(--grid);text-align:center;vertical-align:top;
+  width:14.285%;
+}
+th{background:var(--header);font-weight:600;padding:10px 0}
+td{height:110px;padding:6px}
+td:not(.exam){font-size:14px;color:var(--subtle)}
+.exam{
+  background:var(--accent);color:var(--accent-fg);height:100%;width:100%;
+  border-radius:10px;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;padding:6px;line-height:1.25em;transition:transform .2s;
+}
+.exam:hover{transform:scale(1.04)}
+.exam small{font-size:12px;margin-top:2px}
+.icon{font-size:20px;margin-bottom:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📚 27 April – 7 May 2025 • Exam Timetable</h1>
+  <table>
+    <thead>
+      <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+    </thead>
+    <tbody>
+      <!-- 27 Apr – 3 May -->
+      <tr>
+        <td>27</td>
+        <td class="exam"><div class="icon">🛡️</div>28<small>Network &amp; Info Sec<br>09:30–12:30</small></td>
+        <td>29</td>
+        <td class="exam"><div class="icon">💻</div>30<small>Web Technologies<br>09:30–12:30</small></td>
+        <td>1&nbsp;May</td>
+        <td>2&nbsp;May</td>
+        <td>3&nbsp;May</td>
+      </tr>
+      <!-- 4 – 7 May -->
+      <tr>
+        <td>4</td>
+        <td class="exam"><div class="icon">🏆</div>5<small>Adv&nbsp;Comp&nbsp;Coding&nbsp;II<br>11:30–13:00</small></td>
+        <td>6</td>
+        <td class="exam"><div class="icon">📊</div>7<small>Big&nbsp;Data&nbsp;Analytics<br>09:30–12:30</small></td>
+        <td></td><td></td><td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
